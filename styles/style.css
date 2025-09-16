@@ -1,8 +1,125 @@
 /*
 Colors:
 
-Text: 1A1A1A
+Text: 1A1A1A  (26,26,26).
 Green: #00B172
 White: #FFF
 
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.logo {
+  width: 100px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  height: 30px;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero {
+  height: calc(100vh - 70px);
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-direction: column;
+}
+
+.title {
+  color: white;
+  font-size: 75px;
+}
+
+.subtitle {
+  color: rgb(202, 202, 202);
+  font-size: 25px;
+}
+
+.section-1 {
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.s1-title {
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.separator-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 10%;
+  background-color: #00b172;
+}
+
+.s-green {
+ background-color: #00b172;
+}
+
+.s-white {
+   background-color: white;
+}
+
+.s1-container {
+  text-align: center;
+  gap: 50px;
+}
+.s1-container div {
+  width: 200px;
+}
+
+.s1-container div h3 {
+  color: #00b172;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.s1-container div p {
+  color: rgb(26,26,26);
+}
+
+.s1-img {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+.section-2 {
+  margin: 0px 20px 0px 20px;
+  background-color: #00b172;
+  height: 100vh;
+  color: white;
+}
+
+.white-logo img {
+
+  width: 100px;
+
+}
