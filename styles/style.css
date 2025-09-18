@@ -30,6 +30,10 @@ nav {
   padding: 20px;
   align-items: center;
   height: 30px;
+    position: sticky;
+  top: 0;
+  background-color: white; /* importante, para que no se vea transparente al hacer scroll */
+  z-index: 1000; /* para que quede por encima del contenido */
 }
 .nav-links {
   display: flex;
@@ -119,6 +123,7 @@ nav {
   background-color: #00b172;
   height: 110vh;
   color: white;
+  
 }
 .s2-title {
   flex-direction: column;
@@ -137,11 +142,6 @@ nav {
   height: 75vh;
 }
 
-.text {
-
-
-
-}
 .text div p,
 .text div h3 {
   text-align: left;
@@ -152,7 +152,6 @@ nav {
 .text div h3 {
 
   font-size: 35px;
-
 
 }
 
@@ -166,12 +165,51 @@ font-size: 25px;
 
 @media (max-width: 768px) {
   /* fix */
-  .s1-container {
+  .s1-container, .s2-container {
     flex-direction: column;
     align-items: center;
   }
 
+  .section-1 {
+    margin: 50px 0px 50px 0px;
+  }
   .s1-container div {
     width: 80%; /* o 100% si quieres que ocupen toda la pantalla */
   }
+  .section-1, .section-2 {
+    height: fit-content;
+  }
+.section-2 {
+  margin: 0px 10px 0px 10px;
+}
+  .white-logo img {
+  width: 100px;
+}
+
+.text div p,
+.text div h3 {
+  /* text-align: left;
+  margin-bottom: 20px; */
+  margin: 0px;
+  margin-bottom: 20px;
+}
+
+.text div h3 {
+
+  font-size: 30px;
+
+}
+
+.text div p {
+
+font-size: 20px;
+  
+}
+
+.kanye img {
+  height: 70vh;
+
+  margin: 0px !important;
+}
+
 }
